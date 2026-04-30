@@ -10,7 +10,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FirstMod.MOD_ID);
 
-    public static final DeferredItem<Item> COPPER = ITEMS.register("copper",
+    public static final DeferredItem<Item> SAPPHIRE = ITEMS.register("sapphire",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "grimfirstmod:item/copper"
+    "layer0": "grimfirstmod:item/ruby"
   }
 }
