@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "grimfirstmod:ruby"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "grimfirstmod:ruby_block"
+  }
+}

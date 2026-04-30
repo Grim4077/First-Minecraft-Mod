@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "grimfirstmod:block/sapphire_ore"
+  }
+}

@@ -1,7 +1,9 @@
 package net.grim.FirstMod;
 
 import net.grim.FirstMod.block.ModBlocks;
+import net.grim.FirstMod.items.ModCreativeModTabs;
 import net.grim.FirstMod.items.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -40,6 +42,8 @@ public class FirstMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -63,6 +67,8 @@ public class FirstMod {
     if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
         event.accept(ModBlocks.SAPPHIRE_BLOCK);
         event.accept(ModBlocks.RUBY_BLOCK);
+        event.accept(ModBlocks.SAPPHIRE_ORE);
+        event.accept(ModBlocks.RUBY_ORE);
         }
     }
 
