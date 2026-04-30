@@ -1,5 +1,6 @@
 package net.grim.FirstMod;
 
+import net.grim.FirstMod.block.ModBlocks;
 import net.grim.FirstMod.items.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class FirstMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -56,6 +58,11 @@ public class FirstMod {
     if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RUBY);
+        }
+
+    if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        event.accept(ModBlocks.SAPPHIRE_BLOCK);
+        event.accept(ModBlocks.RUBY_BLOCK);
         }
     }
 

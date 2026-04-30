@@ -1,4 +1,7 @@
 {
   "item.grimfirstmod.ruby": "Ruby",
-  "item.grimfirstmod.sapphire": "Sapphire"
+  "item.grimfirstmod.sapphire": "Sapphire",
+
+  "block.grimfirstmod.sapphire_block": "Block of Sapphire",
+  "block.grimfirstmod.ruby_block": "Block of Ruby"
 }
